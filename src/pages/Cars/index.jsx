@@ -1,9 +1,6 @@
-// import React from 'react';
 import NavigationBar from "../../components/NavigationBar";
-import MainHero from "../../components/Main";
-// import CardCars from '../../components/CardCars';
 import FooterApp from "../../components/Footer";
-import React, { useState, useRef, useEffect } from "react";
+import React, { useState, useRef } from "react";
 import { Row, Col, Container, Card, Button } from "react-bootstrap";
 import axios from "axios";
 import "../../styles/style.css";
