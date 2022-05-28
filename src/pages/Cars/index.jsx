@@ -28,7 +28,7 @@ function Cars() {
 
       //assign response data to state "posts"
       const filterCars = await data.filter(
-        (car) => car.capacity <= capacity.current.value
+        (car) => car.capacity == capacity.current.value
       );
       console.log(filterCars);
       setCars(filterCars);
@@ -121,8 +121,9 @@ function Cars() {
                     <option hidden>Jumlah Penumpang</option>
                     <option value="1">1 orang</option>
                     <option value="2">2 orang</option>
-                    <option value="4">3 orang</option>
-                    <option value="5">4 orang</option>
+                    <option value="3">3 orang</option>
+                    <option value="4">4 orang</option>
+                    <option value="5">5 orang</option>
                     <option value="6">6 orang</option>
                   </select>
                 </div>
@@ -139,9 +140,6 @@ function Cars() {
             </div>
           </form>
         </div>
-        {/* <div className="container" id="cm-result">
-          <Row></Row>
-        </div> */}
       </div>
 
       <Container>
